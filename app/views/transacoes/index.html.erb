@@ -1,0 +1,43 @@
+<h1>Listing transacoes</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Tipo</th>
+    <th>Valor</th>
+    <th>Pago</th>
+    <th>Comprovante</th>
+    <th>Data</th>
+    <th>Vencimento</th>
+    <th>Pagamento</th>
+    <th>Frequencia</th>
+    <th>Conta</th>
+    <th>Sub categoria</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @transacoes.each do |transacao| %>
+  <tr>
+    <td><%= transacao.nome %></td>
+    <td><%= transacao.tipo %></td>
+    <td><%= transacao.valor %></td>
+    <td><%= transacao.pago %></td>
+    <td><%= transacao.comprovante %></td>
+    <td><%= transacao.data %></td>
+    <td><%= transacao.vencimento %></td>
+    <td><%= transacao.pagamento %></td>
+    <td><%= transacao.frequencia %></td>
+    <td><%= transacao.conta %></td>
+    <td><%= transacao.sub_categoria %></td>
+    <td><%= link_to 'Show', transacao %></td>
+    <td><%= link_to 'Edit', edit_transacao_path(transacao) %></td>
+    <td><%= link_to 'Destroy', transacao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Transacao', new_transacao_path %>

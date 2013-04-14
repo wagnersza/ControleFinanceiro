@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @conta.nome %>
+</p>
+
+<p>
+  <b>Numero:</b>
+  <%= @conta.numero %>
+</p>
+
+<p>
+  <b>Agencia:</b>
+  <%= @conta.agencia %>
+</p>
+
+<p>
+  <b>Descricao:</b>
+  <%= @conta.descricao %>
+</p>
+
+<p>
+  <b>Tipo:</b>
+  <%= @conta.tipo %>
+</p>
+
+<p>
+  <b>Juros:</b>
+  <%= @conta.juros %>
+</p>
+
+<p>
+  <b>Saldo:</b>
+  <%= @conta.saldo %>
+</p>
+
+<p>
+  <b>Limite:</b>
+  <%= @conta.limite %>
+</p>
+
+<p>
+  <b>Vencimento:</b>
+  <%= @conta.vencimento %>
+</p>
+
+
+<%= link_to 'Edit', edit_conta_path(@conta) %> |
+<%= link_to 'Back', contas_path %>

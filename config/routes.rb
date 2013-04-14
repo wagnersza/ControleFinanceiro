@@ -1,4 +1,16 @@
 ControleFinanceiro::Application.routes.draw do
+  resources :sub_categorias
+
+
+  resources :categorias
+
+
+  resources :transacoes
+
+
+  resources :contas
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

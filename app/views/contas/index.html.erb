@@ -1,0 +1,39 @@
+<h1>Listing contas</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Numero</th>
+    <th>Agencia</th>
+    <th>Descricao</th>
+    <th>Tipo</th>
+    <th>Juros</th>
+    <th>Saldo</th>
+    <th>Limite</th>
+    <th>Vencimento</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @contas.each do |conta| %>
+  <tr>
+    <td><%= conta.nome %></td>
+    <td><%= conta.numero %></td>
+    <td><%= conta.agencia %></td>
+    <td><%= conta.descricao %></td>
+    <td><%= conta.tipo %></td>
+    <td><%= conta.juros %></td>
+    <td><%= conta.saldo %></td>
+    <td><%= conta.limite %></td>
+    <td><%= conta.vencimento %></td>
+    <td><%= link_to 'Show', conta %></td>
+    <td><%= link_to 'Edit', edit_conta_path(conta) %></td>
+    <td><%= link_to 'Destroy', conta, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Conta', new_conta_path %>

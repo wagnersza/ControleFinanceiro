@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @transacao.nome %>
+</p>
+
+<p>
+  <b>Tipo:</b>
+  <%= @transacao.tipo %>
+</p>
+
+<p>
+  <b>Valor:</b>
+  <%= @transacao.valor %>
+</p>
+
+<p>
+  <b>Pago:</b>
+  <%= @transacao.pago %>
+</p>
+
+<p>
+  <b>Comprovante:</b>
+  <%= @transacao.comprovante %>
+</p>
+
+<p>
+  <b>Data:</b>
+  <%= @transacao.data %>
+</p>
+
+<p>
+  <b>Vencimento:</b>
+  <%= @transacao.vencimento %>
+</p>
+
+<p>
+  <b>Pagamento:</b>
+  <%= @transacao.pagamento %>
+</p>
+
+<p>
+  <b>Frequencia:</b>
+  <%= @transacao.frequencia %>
+</p>
+
+<p>
+  <b>Conta:</b>
+  <%= @transacao.conta %>
+</p>
+
+<p>
+  <b>Sub categoria:</b>
+  <%= @transacao.sub_categoria %>
+</p>
+
+
+<%= link_to 'Edit', edit_transacao_path(@transacao) %> |
+<%= link_to 'Back', transacoes_path %>

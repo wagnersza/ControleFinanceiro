@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nome: MyString
+  tipo: MyString
+  valor: 9.99
+  pago: false
+  comprovante: MyString
+  data: 2013-04-13
+  vencimento: 2013-04-13
+  pagamento: 2013-04-13
+  frequencia: MyString
+  conta: 
+  sub_categoria: 
+
+two:
+  nome: MyString
+  tipo: MyString
+  valor: 9.99
+  pago: false
+  comprovante: MyString
+  data: 2013-04-13
+  vencimento: 2013-04-13
+  pagamento: 2013-04-13
+  frequencia: MyString
+  conta: 
+  sub_categoria: 

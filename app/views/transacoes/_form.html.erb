@@ -1,0 +1,61 @@
+<%= form_for(@transacao) do |f| %>
+  <% if @transacao.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@transacao.errors.count, "error") %> prohibited this transacao from being saved:</h2>
+
+      <ul>
+      <% @transacao.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo %><br />
+    <%= f.text_field :tipo %>
+  </div>
+  <div class="field">
+    <%= f.label :valor %><br />
+    <%= f.text_field :valor %>
+  </div>
+  <div class="field">
+    <%= f.label :pago %><br />
+    <%= f.check_box :pago %>
+  </div>
+  <div class="field">
+    <%= f.label :comprovante %><br />
+    <%= f.text_field :comprovante %>
+  </div>
+  <div class="field">
+    <%= f.label :data %><br />
+    <%= f.date_select :data %>
+  </div>
+  <div class="field">
+    <%= f.label :vencimento %><br />
+    <%= f.date_select :vencimento %>
+  </div>
+  <div class="field">
+    <%= f.label :pagamento %><br />
+    <%= f.date_select :pagamento %>
+  </div>
+  <div class="field">
+    <%= f.label :frequencia %><br />
+    <%= f.text_field :frequencia %>
+  </div>
+  <div class="field">
+    <%= f.label :conta %><br />
+    <%= f.text_field :conta %>
+  </div>
+  <div class="field">
+    <%= f.label :sub_categoria %><br />
+    <%= f.text_field :sub_categoria %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

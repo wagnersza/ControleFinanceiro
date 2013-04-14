@@ -1,0 +1,53 @@
+<%= form_for(@conta) do |f| %>
+  <% if @conta.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@conta.errors.count, "error") %> prohibited this conta from being saved:</h2>
+
+      <ul>
+      <% @conta.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :numero %><br />
+    <%= f.number_field :numero %>
+  </div>
+  <div class="field">
+    <%= f.label :agencia %><br />
+    <%= f.number_field :agencia %>
+  </div>
+  <div class="field">
+    <%= f.label :descricao %><br />
+    <%= f.text_area :descricao %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo %><br />
+    <%= f.text_field :tipo %>
+  </div>
+  <div class="field">
+    <%= f.label :juros %><br />
+    <%= f.text_field :juros %>
+  </div>
+  <div class="field">
+    <%= f.label :saldo %><br />
+    <%= f.text_field :saldo %>
+  </div>
+  <div class="field">
+    <%= f.label :limite %><br />
+    <%= f.text_field :limite %>
+  </div>
+  <div class="field">
+    <%= f.label :vencimento %><br />
+    <%= f.date_select :vencimento %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
