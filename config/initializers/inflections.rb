@@ -13,3 +13,10 @@
 # ActiveSupport::Inflector.inflections do |inflect|
 #   inflect.acronym 'RESTful'
 # end
+ActiveSupport::Inflector.inflections do |inflect|
+  inflect.irregular 'transacao', 'transacoes'
+  inflect.irregular 'sub_categoria', 'sub_categorias'
+  inflect.irregular 'categoria', 'categorias'
+  inflect.irregular 'conta', 'contas'
+  inflect.irregular 'subcategoria', 'subcategorias'
+end
